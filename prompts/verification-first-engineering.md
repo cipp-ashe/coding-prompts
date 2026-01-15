@@ -145,8 +145,8 @@ Report: "Removed LegacyParser (unused since commit abc123)"
 Frame: "Why is calculateTotal() 300 lines?"
 Verify: Analyze actual branches taken (add logging)
 Topology: Map inputs → outputs → side effects
-Essential: Tax calculations, discounts, currency
-Accidental: Caching bug workarounds, dead branches
+  - Essential: Tax calculations, discounts, currency
+  - Accidental: Caching bug workarounds, dead branches
 Build: Extract essential, remove accidental
 Validate: Compare outputs for 1000 test cases
 Report: "Reduced from 300 → 80 lines, same behavior (proven)"
